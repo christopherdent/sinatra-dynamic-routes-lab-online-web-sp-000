@@ -49,6 +49,12 @@ class App < Sinatra::Base
     elsif op == 'subtract'
       total = num1 - num2 
       p total.to_s 
+    elsif op == 'multiply'
+      total = num1 * num2 
+      p total.to_s 
+    elsif op == 'divide'
+      total = num1 / num2 
+      p total.to_s 
     
     end 
     
