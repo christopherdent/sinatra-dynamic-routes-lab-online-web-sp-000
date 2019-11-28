@@ -45,22 +45,12 @@ class App < Sinatra::Base
     
     if op == add
       total = num1 + num2 
-      total.to_s
+      p total.to_s
     end 
     
   end 
   
   
-  get '/multiply/:num1/:num2' do
-    num1 = params[:num1].to_i 
-    num2 = params[:num2].to_i 
-    @product = num1 * num2
-    p @product.to_s
-  end
-
-
- 
-
 
 
 
