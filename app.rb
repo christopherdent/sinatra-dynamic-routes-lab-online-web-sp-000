@@ -43,7 +43,7 @@ class App < Sinatra::Base
     num2 = params[:number2].to_i
     op = params[:operation] 
     
-    if op == add
+    if op == 'add'
       total = num1 + num2 
       p total.to_s
     end 
