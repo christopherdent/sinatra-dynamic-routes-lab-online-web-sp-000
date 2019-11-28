@@ -38,6 +38,18 @@ class App < Sinatra::Base
   end 
   
   
+  get '/:operation/:number1/:number2'
+    num1 = params[:number1].to_i 
+    num2 = params[:number2].to_i
+    op = params[:operation] 
+    
+    if op == add
+      total = num1 + num2 
+      total.to_s
+    end 
+    
+  end 
+  
   
   get '/multiply/:num1/:num2' do
     num1 = params[:num1].to_i 
