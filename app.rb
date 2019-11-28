@@ -7,7 +7,7 @@ class App < Sinatra::Base
 
   get "/reversename/:name" do
     @user_name = params[:name]
-    "Goodbye, #{@user_name}."
+    @user_name.reverse 
   end
   
   
@@ -19,11 +19,7 @@ class App < Sinatra::Base
   end
 
 
-  get 'reversename/:name' do  
-    @name = params[:name]
-    @name.reverse 
-  end 
-    
+ 
 
 
 
