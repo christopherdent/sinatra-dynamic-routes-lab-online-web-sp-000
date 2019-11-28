@@ -25,6 +25,20 @@ class App < Sinatra::Base
   end 
   
   
+  get '/say/:word1/:word2/:word3/:word4/:word5' do 
+  
+    a= params[:word1]
+    b=params[:word2]
+    c=params[:word3]
+    d=params[:word4]
+    e=params[:word5]
+  "{a} {b} {c} {d} {e}"
+  
+  
+  end 
+  
+  
+  
   get '/multiply/:num1/:num2' do
     num1 = params[:num1].to_i 
     num2 = params[:num2].to_i 
